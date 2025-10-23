@@ -201,7 +201,7 @@ function App() {
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
-            <button 
+            <button
               onClick={() => setActiveTab('generator')}
               className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center justify-center space-x-2"
             >
@@ -212,6 +212,42 @@ function App() {
             <button className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl text-lg font-semibold hover:border-blue-600 hover:text-blue-600 transition-colors">
               Watch Demo
             </button>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <img
+                src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="AI Technology"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="font-bold text-lg mb-2">AI-Powered</h3>
+                <p className="text-gray-600 text-sm">Advanced machine learning generates production-ready code</p>
+              </div>
+            </div>
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <img
+                src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Modern Development"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="font-bold text-lg mb-2">Modern Stack</h3>
+                <p className="text-gray-600 text-sm">Latest frameworks and best practices built-in</p>
+              </div>
+            </div>
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <img
+                src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Fast Deployment"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="font-bold text-lg mb-2">Deploy Fast</h3>
+                <p className="text-gray-600 text-sm">From idea to production in minutes, not days</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
